@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MAKE Viewer</title>
+</head>
+<body>
+<div id="parent">
+<div id="lnb">
+    <button id="zoom-in">+</button>
+    <button id="zoom-out">-</button>
+</div>
+<div id="content">
+</div>
+
+</div>
+</body>
+
+
+
+<style>
+    html, body{
+        height: 100%;
+    }
+
+    #parent{
+        display: flex;
+        height: 100%;
+    }
+
+    #lnb{
+        flex: 1;
+        background-color: gray;
+    }
+
+    #content{
+        height: 100%;
+        width: 100%;
+        flex: 3;
+    }
+
+    #scene{
+        height: 100%;
+        width: 100%;
+    }
+</style>
+</html>
